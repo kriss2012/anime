@@ -42,3 +42,28 @@
 .nav-links li:hover {
   color: #0288d1;
 }
+
+.nav-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .nav-links li {
+    font-size: 14px;
+  }
+}
