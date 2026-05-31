@@ -293,7 +293,6 @@ ScrollTrigger.create({
   </div>
 </div>
 
-    </div>
     </>
   );
 };
