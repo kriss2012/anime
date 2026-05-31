@@ -860,3 +860,72 @@ right: -120px;
     height: 300px;
   }
 }
+/* === Section 5: The Future === */
+.section5 {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at center, #ffffff 0%, #e0f7fa 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section5-content {
+  max-width: 800px;
+  z-index: 10;
+  padding: 20px;
+}
+
+.section5-content h1 {
+  font-size: 4.5rem;
+  color: #0277bd;
+  margin-bottom: 20px;
+}
+
+.section5-content p {
+  font-size: 1.6rem;
+  color: #455a64;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.glow-btn {
+  box-shadow: 0 4px 15px rgba(2, 136, 209, 0.4);
+}
+
+.floating-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #ffca28;
+  border-radius: 50%;
+  opacity: 0.6;
+  box-shadow: 0 0 10px #ffca28, 0 0 20px #ffca28;
+  animation: floatUp 10s infinite linear;
+}
+
+.particle:nth-child(odd) { background: #64b5f6; box-shadow: 0 0 10px #64b5f6; }
+.particle:nth-child(3n) { background: #81c784; box-shadow: 0 0 10px #81c784; }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  100% {
+    transform: translateY(-100px) scale(1.5);
+    opacity: 0;
+  }
+}
