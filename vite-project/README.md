@@ -1,5 +1,13 @@
 # 🌱 Mend — Mental Wellness Web Application
 
+<div align="left">
+  <a href="https://kriss2012.github.io/anime/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Demo-Click%20Here-0277bd?style=for-the-badge&logo=react" alt="Live Demo" />
+  </a>
+</div>
+
+<br />
+
 Mend is an interactive, scroll-responsive, storytelling single-page React application designed to guide users through a comforting mental health journey. Using elegant scroll animations, weather simulations, and visual metaphors, it helps users reflect on struggle, healing, growth, and long-term wellness.
 
 ---
