@@ -130,7 +130,7 @@ ScrollTrigger.create({
             "You are enough. You are growing. And you're allowed to take your time."
           </p>
           
-          <button className="hero-btn">Begin Your Journey</button>
+          <button className="hero-btn" onClick={() => document.getElementById('struggle').scrollIntoView({ behavior: 'smooth' })}>Begin Your Journey</button>
         </div>
         
 
@@ -273,8 +273,24 @@ ScrollTrigger.create({
 
 
   </div>
+  </div>
 </div>
 
+<div id="future" className="section5">
+  <div className="section5-content">
+    <h1 className="reveal-text">You Are Ready.</h1>
+    <p className="reveal-text delay">
+      The storm has passed, the quiet has done its work, and now, you bloom.
+      Carry this strength forward. Your journey is uniquely yours, and the world is better with your light in it.
+    </p>
+    <button className="hero-btn glow-btn" onClick={() => document.getElementById('home').scrollIntoView({ behavior: 'smooth' })}>Return to the Start</button>
+  </div>
+  <div className="floating-particles">
+    {Array.from({ length: 20 }).map((_, i) => (
+      <div className="particle" key={i}></div>
+    ))}
+  </div>
+</div>
 
     </div>
   );
