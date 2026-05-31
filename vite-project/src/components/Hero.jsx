@@ -110,7 +110,7 @@ ScrollTrigger.create({
       </div>
 
 
-<div className="hero" style={{
+<div id="home" className="hero" style={{
         backgroundImage: `url(${storm})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -136,7 +136,7 @@ ScrollTrigger.create({
 
       </div>
 
-     <div className="section2" ref={sectionRef}>
+     <div id="struggle" className="section2" ref={sectionRef}>
       <div className="section2-text">
         <h1 ref={headingRef}>Not every day is sunny.</h1>
         <p ref={paragraphRef}>
@@ -148,7 +148,7 @@ ScrollTrigger.create({
       </div>
     </div>
       </div>
-      <div className="section3">
+      <div id="healing" className="section3">
         <div className="sun-rays"></div> 
   <div className="section3-text">
     <h1>And then, the light returns.</h1>
@@ -165,7 +165,7 @@ ScrollTrigger.create({
 </div>
 
 </div>
-<div className="section4">
+<div id="growth" className="section4">
 
   <div className="section4-text">
     <h1>Growth Begins in the Quiet</h1>
