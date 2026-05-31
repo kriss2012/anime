@@ -99,6 +99,7 @@ ScrollTrigger.create({
   }, []);
 
   return (
+    <>
     <div className="scroll-wrapper">
         <div className="rain-zone">
       <div className="lightning-flash"></div>
