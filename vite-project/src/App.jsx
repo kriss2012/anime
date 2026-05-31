@@ -6,9 +6,10 @@ function App() {
 
   return (
     <>
-    <Hero />
+      <Hero />
     </>
   )
 }
 
 export default App
+// Made By Krishna Patil
