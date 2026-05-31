@@ -95,11 +95,7 @@ const Hero = () => {
         </div>
 
         {/* ── SECTION 1: HERO ── */}
-        <div id="home" className="hero" style={{
-          backgroundImage: `url(${storm})`,
-          backgroundSize: 'cover', backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center', width: '100%', height: '100vh',
-        }}>
+        <div id="home" className="hero">
           <Navbar />
           <div className="cloud cloud1"></div>
           <div className="cloud cloud2"></div>
