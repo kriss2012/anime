@@ -798,5 +798,65 @@ right: -120px;
   25% { transform: translate(110px, -50px); }
   50% { transform: translate(200px, -160px); }
   75% { transform: translate(360px, -70px); }
-  100% { transform: translate(590px, -140px); }
+  100% { transform: translate(500px, -110px); }
+}
+
+/* ── Mobile Responsiveness ── */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-quote {
+    font-size: 1.1rem;
+    margin: 2rem auto;
+  }
+  
+  .section2-text h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section2-text p {
+    font-size: 1.1rem;
+  }
+  
+  .section3-text h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section3-text p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .section4 {
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .section4-text {
+    margin-top: 50px;
+  }
+  
+  .section4-text h1 {
+    font-size: 2.2rem;
+  }
+  
+  .section4-text p {
+    font-size: 1.1rem;
+  }
+  
+  .plant, .plant2, .plant3, .soil-base {
+    transform: scale(0.6);
+  }
+  
+  .flower-container {
+    transform: scale(0.6) !important;
+  }
+  
+  .sun-rays {
+    width: 300px;
+    height: 300px;
+  }
 }
