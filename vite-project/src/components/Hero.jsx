@@ -86,6 +86,7 @@ const Hero = () => {
   return (
     <>
     <div className="scroll-wrapper">
+      <Navbar />
       <div className="rain-zone">
         <div className="lightning-flash"></div>
         <div className="rain-container">
@@ -96,7 +97,6 @@ const Hero = () => {
 
         {/* ── SECTION 1: HERO ── */}
         <div id="home" className="hero">
-          <Navbar />
           <div className="cloud cloud1"></div>
           <div className="cloud cloud2"></div>
           <div className="cloud cloud3"></div>
