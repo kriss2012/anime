@@ -1241,9 +1241,13 @@ right: -120px;
 
 /* -- Mobile Responsive -- */
 @media (max-width: 768px) {
-  .hero-text h1 { font-size: 2.4rem; }
+  .hero-text h1 { font-size: 2.2rem; }
   .hero-quote { font-size: 1rem; }
-  .hero-stats { gap: 20px; }
+  .hero-stats {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
   .section2-text h1 { font-size: 2rem; }
   .section2-text p { font-size: 1rem; }
   .story-cards-row, .healing-cards { padding: 20px; }
@@ -1254,9 +1258,35 @@ right: -120px;
   .section-turning { padding: 60px 20px; }
   .turning-inner h2 { font-size: 2rem; }
   .turning-steps { grid-template-columns: 1fr; }
-  .section4 { flex-direction: column; padding: 60px 20px; }
+  .section4 {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 40px;
+  }
   .section4-text { max-width: 100%; }
   .section4-text h1 { font-size: 2rem; }
+  .left {
+    width: 300px;
+    height: 250px;
+    margin: 40px auto 0;
+    transform: scale(0.85);
+  }
+  .plant {
+    margin: 0 auto;
+  }
+  .plant2 {
+    right: 40px !important;
+    bottom: 50px !important;
+  }
+  .plant3 {
+    right: 180px !important;
+    bottom: 50px !important;
+  }
+  .soil-base {
+    width: 340px !important;
+    right: -20px !important;
+    bottom: -50px !important;
+  }
   .section-tools { padding: 60px 20px; }
   .section-tools h2 { font-size: 2rem; }
   .tools-grid { grid-template-columns: 1fr; }
