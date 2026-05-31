@@ -53,19 +53,22 @@ z-index: 3;}
 .hero {
   width: 100%;
   min-height: 100vh;
-  background: url('/images/cloud.png') center center / cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   z-index: 1;
   position: relative;
+  overflow: hidden;
+  padding: 120px 20px 80px;
+  background: linear-gradient(to bottom, #d0eafc, #f0f9ff);
 }
 
 .hero-text {
   max-width: 1000px;
   padding: 2rem;
   z-index: 4;
-  margin-top: 80px;
 }
 
 .hero-text h1 {
@@ -100,11 +103,7 @@ z-index: 3;}
 .hero-btn:hover {
   background-color: #0277bd;
 }
-.hero {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #d0eafc, #f0f9ff);
-}
+/* Background gradient and overflow handled in main hero block */
 
 
 .cloud {
