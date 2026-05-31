@@ -67,13 +67,18 @@
     width: 95%;
     top: 10px;
   }
+
   .logo {
     font-size: 1.4rem;
   }
+
   .nav-links {
     gap: 15px;
   }
+
   .nav-links li {
     font-size: 13px;
   }
 }
+
+/* Made By Krishna Patil */
