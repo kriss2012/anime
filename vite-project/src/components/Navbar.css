@@ -1,28 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .nav {
-  width: 93%;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
   height: 70px;
-  color: #2c3e50;
-  font-family: 'Outfit', sans-serif;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  top: 0;
-  z-index: 1000;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.08);
   border-radius: 50px;
-  overflow: hidden;
+  z-index: 9999;
+  transition: all 0.3s ease;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #37474f;
+  color: #1a237e;
   letter-spacing: 1px;
 }
 
@@ -36,11 +45,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 500;
-  color: #546e7a;
+  color: #3f51b5;
 }
 
 .nav-links li:hover {
-  color: #0288d1;
+  color: #00e5ff;
+  transform: translateY(-1px);
 }
 
 .nav-links li a {
@@ -50,20 +60,20 @@
 
 @media (max-width: 768px) {
   .nav {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-    border-radius: 15px;
-    width: 90%;
-    margin: 10px auto;
+    flex-direction: row;
+    height: 60px;
+    padding: 0 20px;
+    border-radius: 30px;
+    width: 95%;
+    top: 10px;
+  }
+  .logo {
+    font-size: 1.4rem;
   }
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
-    margin-top: 10px;
   }
   .nav-links li {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
